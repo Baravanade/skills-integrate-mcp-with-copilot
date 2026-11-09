@@ -12,5 +12,23 @@ Remember, it's self-paced so feel free to take a break! ☕️
 
 ---
 
-&copy; 2025 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
+## GitHub MCP configuration
 
+This workspace provides two configuration formats:
+
+- [`.vscode/mcp.json`](.vscode/mcp.json) uses `servers` for VS Code.
+- [`.mcp.json`](.mcp.json) uses `mcpServers` for Copilot SDK/harness sessions.
+
+If starting `github` reports `has no installed config to restart`, reload the
+window with **Developer: Reload Window**, then start a new Copilot session so it
+loads the workspace configuration. Open the session's **Agent Customizations**
+editor, select **MCP Servers**, and start or enable `github`. Complete any trust
+or authentication prompts. Never put access tokens in either configuration file.
+
+In a Dev Container or remote workspace, the configuration must be available in
+the workspace where the session runs.
+
+See the [VS Code MCP configuration reference](https://code.visualstudio.com/docs/agents/reference/mcp-configuration)
+for configuration formats and forwarding behavior.
+
+&copy; 2025 GitHub &bull; [Code of Conduct](https://www.contributor-covenant.org/version/2/1/code_of_conduct/code_of_conduct.md) &bull; [MIT License](https://gh.io/mit)
